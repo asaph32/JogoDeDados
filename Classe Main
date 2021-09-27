@@ -1,0 +1,23 @@
+public class JogoDeDados {
+    public static void main(String[] args) {
+        Rodadas r = new Rodadas();
+
+        r.setNomeJogador1("Asaph");
+        r.setNomeJogador2("Fabricio");
+        r.setNumeroDeRodadas(3);
+
+        r.setJogador1LancaPrimeiroDado(1);
+        r.setJogador1LancaSegundoDado(2);
+        r.setJogador1LancaTerceiroDado(3);
+
+        r.setJogador2LancaPrimeiroDado(4);
+        r.setJogador2LancaSegundoDado(5);
+        r.setJogador2LancaTerceiroDado(6);
+
+        r.Jogar();
+        r.Vencedor();
+        r.SobreOJogo();
+
+
+    }
+}
