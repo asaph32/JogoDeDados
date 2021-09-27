@@ -1,0 +1,65 @@
+public class Jogadores {
+    public String NomeJogador1;
+    public String NomeJogador2;
+    public int Jogador1LancaPrimeiroDado;
+    public int Jogador1LancaSegundoDado;
+    public int Jogador1LancaTerceiroDado;
+    public int Jogador2LancaPrimeiroDado;
+    public int Jogador2LancaSegundoDado;
+    public int Jogador2LancaTerceiroDado;
+
+    public void setNomeJogador1(String NomeJogador1) {
+        this.NomeJogador1 = NomeJogador1;
+    }
+    public String getNomeJogador1() {
+        return this.NomeJogador1;
+    }
+    public void setNomeJogador2(String NomeJogador2) {
+         this.NomeJogador2 = NomeJogador2 ;
+    }
+    public String getNomeJogador2() {
+        return this.NomeJogador2;
+    }
+    public void setJogador1LancaPrimeiroDado(int Jogador1LancaPrimeiroDado) {
+        this.Jogador1LancaPrimeiroDado = Jogador1LancaPrimeiroDado;
+    }
+    public int getJogador1LancaPrimeiroDado() {
+        return this.Jogador1LancaPrimeiroDado;
+    }
+    public void setJogador1LancaSegundoDado(int Jogador1LancaSegundoDado) {
+        this.Jogador1LancaSegundoDado = Jogador1LancaSegundoDado;
+    }
+    public int getJogador1LancaSegundoDado() {
+        return this.Jogador1LancaSegundoDado;
+    }
+    public void setJogador1LancaTerceiroDado(int Jogador1LancaTerceiroDado) {
+        this.Jogador1LancaTerceiroDado = Jogador1LancaTerceiroDado;
+    }
+    public int getJogador1LancaTerceiroDado() {
+        return this.Jogador1LancaTerceiroDado;
+    }
+    public void setJogador2LancaPrimeiroDado(int Jogador2LancaPrimeiroDado) {
+        this.Jogador2LancaPrimeiroDado = Jogador2LancaPrimeiroDado;
+    }
+    public int getJogador2LancaPrimeiroDado() {
+        return  this.Jogador2LancaPrimeiroDado;
+    }
+    public void setJogador2LancaSegundoDado(int Jogador2LancaSegundoDado) {
+        this.Jogador2LancaSegundoDado = Jogador2LancaSegundoDado;
+    }
+    public int getJogador2LancaSegundoDado() {
+        return Jogador2LancaSegundoDado;
+    }
+    public void setJogador2LancaTerceiroDado(int Jogador2LancaTerceiroDado) {
+        this.Jogador2LancaTerceiroDado = Jogador2LancaTerceiroDado;
+    }
+    public int getJogador2LancaTerceiroDado() {
+        return Jogador2LancaTerceiroDado;
+    }
+
+
+    public void NomeDosJogadores () {
+        System.out.println("Nome do Jogador 1 : " + this.getNomeJogador1());
+        System.out.println("Nome do Jogador 2 : " + this.getNomeJogador2());
+    }
+}
