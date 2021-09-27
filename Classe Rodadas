@@ -1,0 +1,91 @@
+public class Rodadas extends Jogadores {
+
+    public int NumeroDeRodadas;
+    public int totalJogador1;
+    public int totalJogador2;
+
+    public void setNumeroDeRodadas(int NumeroDeRodadas) {
+        this.NumeroDeRodadas = NumeroDeRodadas;
+    }
+    public int getNumeroDeRodadas() {
+        return this.NumeroDeRodadas;
+    }
+    public void setTotalJogador1(int totalJogador1) {
+        this.totalJogador1 = totalJogador1;
+    }
+    public int getTotalJogador1() {
+        return this.totalJogador1;
+    }
+    public void setTotalJogador2(int TotalJogador2) {
+        this.totalJogador2 = totalJogador2;
+    }
+    public int getTotalJogador2() {
+        return this.totalJogador2;
+    }
+
+    public void Jogar() {
+            if (Jogador1LancaPrimeiroDado == Jogador1LancaSegundoDado && Jogador1LancaTerceiroDado != Jogador1LancaSegundoDado) {
+
+                totalJogador1 = (Jogador1LancaPrimeiroDado + Jogador1LancaSegundoDado + Jogador1LancaTerceiroDado) * 2;
+
+                totalJogador2 = Jogador2LancaPrimeiroDado + Jogador2LancaSegundoDado + Jogador2LancaTerceiroDado;
+
+            } else if (Jogador2LancaPrimeiroDado == Jogador2LancaSegundoDado && Jogador2LancaTerceiroDado != Jogador2LancaSegundoDado) {
+
+                totalJogador2 = (Jogador2LancaPrimeiroDado + Jogador2LancaSegundoDado + Jogador2LancaTerceiroDado) * 2;
+
+                totalJogador1 = Jogador1LancaPrimeiroDado + Jogador1LancaSegundoDado + Jogador1LancaTerceiroDado;
+
+            } else if (Jogador1LancaPrimeiroDado == Jogador1LancaSegundoDado && Jogador1LancaTerceiroDado == Jogador1LancaSegundoDado) {
+
+                totalJogador1 = (Jogador1LancaPrimeiroDado + Jogador1LancaSegundoDado + Jogador1LancaTerceiroDado) * 3;
+
+                totalJogador2 = Jogador2LancaPrimeiroDado + Jogador2LancaSegundoDado + Jogador2LancaTerceiroDado;
+
+            } else if (Jogador2LancaPrimeiroDado == Jogador2LancaSegundoDado && Jogador2LancaTerceiroDado == Jogador2LancaSegundoDado) {
+
+                totalJogador2 = (Jogador2LancaPrimeiroDado + Jogador2LancaSegundoDado + Jogador2LancaTerceiroDado) * 3;
+
+                totalJogador1 = Jogador1LancaPrimeiroDado + Jogador1LancaSegundoDado + Jogador1LancaTerceiroDado;
+
+            }
+            else {
+                totalJogador1 = Jogador1LancaPrimeiroDado + Jogador1LancaSegundoDado + Jogador1LancaTerceiroDado;
+
+                totalJogador2 = Jogador2LancaPrimeiroDado + Jogador2LancaSegundoDado + Jogador2LancaTerceiroDado;
+
+            }
+
+    }
+
+    public void SobreOJogo() {
+
+        System.out.println("NUMERO DA RODADA : " + this.NumeroDeRodadas);
+
+        System.out.println("===========================================================");
+
+        System.out.println("----------RESULTADO DA PARTIDA---------");
+
+        System.out.println("NUMERO DOS DADOS JOGADOS PELO : " + this.NomeJogador1);
+
+        System.out.println(" DADO 1 : " + this.Jogador1LancaPrimeiroDado + " DADO 2 : " + this.Jogador1LancaSegundoDado + " DADO 3 : " + this.Jogador1LancaTerceiroDado);
+
+        System.out.println("NUMERO DOS DADOS JOGADOS PELO : " + this.NomeJogador2);
+
+        System.out.println(" DADO 1 : " + this.Jogador2LancaPrimeiroDado + " DADO 2 : " + this.Jogador2LancaSegundoDado + " DADO 3 : " + this.Jogador2LancaTerceiroDado);
+
+        System.out.println("TOTAL DO " + this.NomeJogador1 + " FOI DE " + this.totalJogador1 + " PONTOS E DO " + this.NomeJogador2 + " FOI DE " + this.totalJogador2);
+    }
+    public void Vencedor () {
+        if (totalJogador1 > totalJogador2) {
+            System.out.println("O VENCEDOR FOI : " + this.NomeJogador1);
+        }
+        else {
+            System.out.println(" O VENCEDOR FOI : " + this.NomeJogador2);
+        }
+
+    }
+
+
+
+    }
